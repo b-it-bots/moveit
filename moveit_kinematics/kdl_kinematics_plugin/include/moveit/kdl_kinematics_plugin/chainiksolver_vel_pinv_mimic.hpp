@@ -81,6 +81,8 @@ public:
     return -1;
   };
 
+  virtual void updateInternalDataStructures() { }
+
   /**
    * @brief Set a vector of indices that map each (and every) joint in the chain onto the corresponding joint in a
    * reduced set of joints that do not include the mimic joints. This vector must be of size chain.getNrOfJoints().

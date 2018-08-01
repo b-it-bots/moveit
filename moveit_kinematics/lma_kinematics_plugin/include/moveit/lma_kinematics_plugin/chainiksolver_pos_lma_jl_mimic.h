@@ -82,6 +82,8 @@ public:
 
   virtual int CartToJntAdvanced(const JntArray& q_init, const Frame& p_in, JntArray& q_out, bool lock_redundant_joints);
 
+  virtual void updateInternalDataStructures() { }
+
   bool setMimicJoints(const std::vector<lma_kinematics_plugin::JointMimic>& mimic_joints);
 
 private:
